@@ -10,13 +10,13 @@
 	const todoList = document.getElementById("todoList");
 	
 	addTodoBtn.addEventListener("click", () => {
-	  // const newTodoText = newTodoInput.value.trim();
-	  // if (newTodoText.length === 0) {
-	  //   return;
-	  // }
+	  const newTodoText = newTodoInput.value.trim();
+	  if (newTodoText.length === 0) {
+	    return;
+	  }
 	  const newTodoLi = document.createElement("li");
-	  // newTodoLi.textContent = newTodoText;
-	  todoList.appendChild(newTodoLi);
+	   newTodoLi.textContent = newTodoText;
+	  newTodoLi.appendChild(todoList);
 	  newTodoInput.value = "";
 	});
 		
